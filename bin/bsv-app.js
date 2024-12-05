@@ -5,6 +5,7 @@ const path = require('path')
 const fs = require('fs-extra')
 const simpleGit = require('simple-git')
 const figlet = require('figlet')
+const os = require('os')
 
 let inquirer
 let chalk
@@ -124,10 +125,11 @@ async function run() {
   const options = program.opts()
 
   let template, projectName, authorName
-
+  const currentUser = os.hostname() // Use the hostname of the computer
+  console.log('ffsdafadsf', currentUser)
   try {
     if (options.yes) {
-      template = 'meter'
+      template = 'Meter - A feature-packed starting point'
       projectName = 'bsv-app'
       authorName = ''
     } else {
@@ -149,7 +151,7 @@ async function run() {
           message: 'Enter a name for your project:',
           default: 'bsv-app',
           validate: (input) => input.length > 0 || 'Project name cannot be empty.',
-        },
+        }
       ])
 
       projectName = projectNameInput
@@ -158,9 +160,9 @@ async function run() {
         {
           type: 'input',
           name: 'authorNameInput',
-          message: 'Enter the author name:',
-          default: '',
-        },
+          message: 'Enter the author name (hostname by default):',
+          default: ''
+        }
       ])
 
       authorName = authorNameInput
@@ -174,6 +176,11 @@ async function run() {
       console.error(chalk.red('❌ An unexpected error occurred:'), error.message)
     }
     process.exit(0)
+  }
+
+  // If authorName is empty, fallback to machine's hostname
+  if (!authorName) {
+    authorName = currentUser
   }
 
   const projectDir = path.resolve(process.cwd(), projectName)
