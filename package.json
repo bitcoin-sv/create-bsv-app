@@ -1,6 +1,6 @@
 {
   "name": "@bsv/app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI for bootstrapping BSV React applications",
   "main": "bin/bsv-app.js",
   "bin": {
