@@ -1,0 +1,28 @@
+{
+  "name": "@bsv/app",
+  "version": "1.0.0",
+  "description": "CLI for bootstrapping BSV React applications",
+  "main": "bin/bsv-app.js",
+  "bin": {
+    "@bsv/app": "./bin/bsv-app.js"
+  },
+  "scripts": {
+    "start": "node ./bin/bsv-app.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^10.0.0",
+    "figlet": "^1.8.0",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^12.1.0",
+    "simple-git": "^3.19.0"
+  },
+  "keywords": [
+    "bsv",
+    "react",
+    "cli",
+    "bootstrap"
+  ],
+  "author": "BSV Association",
+  "license": "SEE LICENSE IN LICENSE.txt"
+}
