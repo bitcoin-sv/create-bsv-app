@@ -126,7 +126,6 @@ async function run() {
 
   let template, projectName, authorName
   const currentUser = os.hostname() // Use the hostname of the computer
-  console.log('ffsdafadsf', currentUser)
   try {
     if (options.yes) {
       template = 'Meter - A feature-packed starting point'
