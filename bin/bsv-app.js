@@ -24,7 +24,7 @@ async function run() {
 
   const templates = {
     'Meter - A feature-packed starting point': 'https://github.com/p2ppsr/meter.git',
-    // 'Hello-World - Your first steps into BSV': 'https://github.com/p2ppsr/overlay-demo-ui.git',
+    'HelloWorld - Your first BSV app': 'https://github.com/p2ppsr/hello-overlay.git',
   }
 
   async function checkGitInstalled() {
