@@ -27,8 +27,11 @@ async function run() {
     'MetaMarket — Marketplace for 3D Objects': 'https://github.com/p2ppsr/metamarket.git',
     'ToDo List — Simple demo of Wallet,  baskets and encryption': 'https://github.com/p2ppsr/todo-ts.git',
     'MarsCast — Micropayment-monetized weather data from Mars for cool people': 'https://github.com/p2ppsr/meter.git',
-    'Coinflip — Trustless, provably fair peer-to-peer interactions': 'https://github.com/p2ppsr/coinflip.git'
-    // 'HelloWorld - Your first BSV app': 'https://github.com/p2ppsr/hello-overlay.git',
+    'Coinflip — Trustless, provably fair peer-to-peer interactions': 'https://github.com/p2ppsr/coinflip.git',
+    'Postboard - Global public town square of messages': 'https://github.com/p2ppsr/hello-overlay.git',
+    'Locksmith — Simple demonstration of locking up coins with a message': 'https://github.com/p2ppsr/locksmith.git',
+    'PeerPay — Simple, peer-to-peer BSV payments backed by identity': 'https://github.com/p2ppsr/peerpay-react.git',
+    'AtFinder — Alternative UI for PeerPay that uses the same protocols': 'https://github.com/p2ppsr/atfinder-ui.git'
   }
 
   async function checkGitInstalled() {
